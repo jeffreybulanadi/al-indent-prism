@@ -1,0 +1,118 @@
+{
+  "name": "al-indent-prism",
+  "displayName": "AL Indent Prism",
+  "description": "Rainbow indentation colorization for Business Central AL language files",
+  "version": "1.0.1",
+  "icon": "icon.png",
+  "publisher": "jeffreybulanadi",
+  "author": {
+    "name": "Jeffrey Bulanadi"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffreybulanadi/al-indent-prism.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeffreybulanadi/al-indent-prism/issues"
+  },
+  "homepage": "https://github.com/jeffreybulanadi/al-indent-prism#readme",
+  "keywords": [
+    "AL",
+    "Business Central",
+    "Dynamics 365",
+    "BC",
+    "indent",
+    "indentation",
+    "colorize",
+    "rainbow",
+    "visualization",
+    "code structure",
+    "syntax",
+    "theme"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:al"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "AL Indent Prism",
+      "properties": {
+        "alIndentPrism.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable indent colorization"
+        },
+        "alIndentPrism.indentSize": {
+          "type": "number",
+          "default": 4,
+          "description": "Number of spaces per indent level"
+        },
+        "alIndentPrism.colors": {
+          "type": "array",
+          "default": [
+            "rgba(255, 64, 64, 0.3)",
+            "rgba(255, 178, 64, 0.3)",
+            "rgba(255, 255, 64, 0.3)",
+            "rgba(64, 255, 64, 0.3)",
+            "rgba(64, 178, 255, 0.3)",
+            "rgba(178, 64, 255, 0.3)"
+          ],
+          "description": "Colors for each indent level (cycles through if more levels than colors)"
+        },
+        "alIndentPrism.lightColors": {
+          "type": "array",
+          "default": [
+            "rgba(255, 128, 128, 0.2)",
+            "rgba(255, 200, 128, 0.2)",
+            "rgba(200, 200, 128, 0.2)",
+            "rgba(128, 255, 128, 0.2)",
+            "rgba(128, 200, 255, 0.2)",
+            "rgba(200, 128, 255, 0.2)"
+          ],
+          "description": "Colors for light themes"
+        },
+        "alIndentPrism.errorColor": {
+          "type": "string",
+          "default": "rgba(255, 64, 64, 0.6)",
+          "description": "Color for incorrect indentation"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.106.1",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.46.3",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "ts-loader": "^9.5.4",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
