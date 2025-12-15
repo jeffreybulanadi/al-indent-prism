@@ -2,7 +2,7 @@
   "name": "al-indent-prism",
   "displayName": "AL Indent Prism",
   "description": "Rainbow indentation colorization for Business Central AL language files",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "icon": "icon.png",
   "publisher": "jeffreybulanadi",
   "author": {
