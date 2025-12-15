@@ -71,15 +71,6 @@ Customize the extension behavior through VS Code settings:
 - **More Colors**: Add more colors to the array for deeper nesting levels
 - **Disable Temporarily**: Set `"alIndentPrism.enabled": false` to turn off without uninstalling
 
-<!-- ## Roadmap
-
-- [ ] Current indent level highlighting
-- [ ] Indent guide lines
-- [ ] Error detection for incorrect indentation
-- [ ] AL-specific syntax awareness (begin/end blocks)
-- [ ] Block/frame visualization options
-- [ ] Per-workspace color configurations -->
-
 ## Requirements
 
 - Visual Studio Code 1.106.1 or higher
@@ -87,7 +78,7 @@ Customize the extension behavior through VS Code settings:
 
 ## Known Issues
 
-Please report issues on our [GitHub repository](https://github.com/yourusername/al-indent-prism/issues).
+Please report issues on our [GitHub repository](https://github.com/jeffreybulanadi/al-indent-prism/issues).
 
 ## Contributing
 
