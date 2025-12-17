@@ -2,7 +2,7 @@
 
 A Visual Studio Code extension that colorizes indentation levels in Business Central AL language files, making it easier to read and understand code structure at a glance.
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Features
@@ -13,6 +13,10 @@ A Visual Studio Code extension that colorizes indentation levels in Business Cen
 - **Configurable** - Adjust indent size and colors to match your preferences
 - **Performance** - Lightweight and fast, updates in real-time as you type
 - **AL-Specific** - Only activates for Business Central AL language files
+
+## Here's how it works
+
+![AL Indent Prism in Action](https://raw.githubusercontent.com/jeffreybulanadi/al-indent-prism/master/assets/Animation.gif)
 
 ## Usage
 
