@@ -2,7 +2,7 @@
 
 A Visual Studio Code extension that colorizes indentation levels in Business Central AL language files, making it easier to read and understand code structure at a glance.
 
-![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.3-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Features
